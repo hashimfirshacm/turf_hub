@@ -1,0 +1,45 @@
+#=============Turf========
+
+#api call for listing turf
+###
+GET http://127.0.0.1:8000/turf/
+Accept: application/json
+
+###api call for adding turf
+###
+POST http://127.0.0.1:8000/turf/
+Content-Type: application/json
+
+{ 
+    "id":4,
+    "name":"Anfield",
+    "location":"kunnamkulam,thrissur,pottore",
+    "address":"Anfield,kunnamkulam,thrissur",
+    "description":"soil ground 360",
+    "opening_time":"05:00",
+    "closing_time":"12:45",
+    "day_price":700,
+    "night_price":1700,
+    "facilities":"parking,rest room,ground boy support"
+    
+
+}
+
+###
+PUT  http://127.0.0.1:8000/turf/1/
+Content-Type: application/json
+
+{ 
+    "id":1,
+    "name":"Anfield",
+    "location":"kunnamkulam,thrissur,pottore",
+    "address":"Anfield,kunnamkulam,thrissur",
+    "description":"soil ground 360",
+    "opening_time":"05:00",
+    "closing_time":"12:45",
+    "day_price":700,
+    "night_price":1700,
+    "facilities":"parking,rest room,ground boy support"
+    
+
+}
